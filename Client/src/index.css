@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+/* index.css or global.css */
+:root {
+    --bg-color: #f8f8f8; /* Light mode background */
+    --text-color: #333; /* Light mode text color */
+}
+
+[data-theme="dark"] {
+    --bg-color: #121212; /* Dark mode background */
+    --text-color: #eee; /* Dark mode text color */
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+/* Example: Styling elements based on theme */
+.some-element {
+    background-color: #eee; /* Light mode */
+}
+
+[data-theme="dark"] .some-element {
+    background-color: #333; /* Dark mode */
+}
+
+/* Existing Tailwind CSS will work alongside these custom styles */
