@@ -7,6 +7,8 @@ import SignUp from './Pages/SignUp'
 import Projects from './Pages/Projects'
 import Dashboard from './Pages/Dashboard'
 import Header from './Components/Header'
+import Footer from './Components/Footer'
+
 
 
 const App = () => {
@@ -21,6 +23,7 @@ const App = () => {
       <Route path="/projects" element={<Projects />} />
       <Route path="/dashboard" element={<Dashboard />} />
     </Routes>
+    <Footer/>
     </BrowserRouter>
   )
 }
